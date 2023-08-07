@@ -2,6 +2,6 @@ import 'titan.dart';
 
 class Human extends Titan {
   String killAlltitan() {
-    return " Sasageyo ... Shinzo Sasageyo..." + get_PowerPoint + ' ';
+    return "Sasageyo ... Shinzo Sasageyo..." + get_PowerPoint;
   }
 }
