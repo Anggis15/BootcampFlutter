@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sanberappflutter/tugas/tugas10/HomeScreen.dart';
-import 'package:sanberappflutter/tugas/tugas10/LoginScree.dart';
+import 'package:sanberappflutter/tugas/tugas10/LoginScreeSendiri.dart';
+import 'package:sanberappflutter/tugas/tugas10/LoginScreen.dart';
 import 'package:sanberappflutter/tugas/tugas9/telegram.dart';
 
 void main() {
@@ -14,12 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
