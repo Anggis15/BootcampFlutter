@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sanberappflutter/tugas/tugas9/DrawerScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,12 +7,22 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerScreen(),
+      appBar: AppBar(
+        title: Text("Home"),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Icon(Icons.search),
+          )
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 60),
+            // SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -19,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                 IconButton(onPressed: () {}, icon: Icon(Icons.trolley))
               ],
             ),
-            SizedBox(height: 37),
+            // SizedBox(height: 20),
             Text.rich(
               TextSpan(children: <TextSpan>[
                 TextSpan(
@@ -27,10 +38,10 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(color: Colors.blue[300])),
                 TextSpan(text: "Anggi", style: TextStyle(color: Colors.black))
               ]),
-              style: TextStyle(fontSize: 50),
+              style: TextStyle(fontSize: 20),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             TextField(
               decoration: InputDecoration(
@@ -44,7 +55,7 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 10),
             SizedBox(
-              height: 300,
+              height: 200,
               child: GridView.count(
                 padding: EdgeInsets.all(5),
                 crossAxisCount: 2,
