@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sanberappflutter/tugas/tugas10/HomeScreen.dart';
 import 'package:sanberappflutter/tugas/tugas10/LoginScreeSendiri.dart';
 import 'package:sanberappflutter/tugas/tugas10/LoginScreen.dart';
+import 'package:sanberappflutter/tugas/tugas12/GetAllData.dart';
+import 'package:sanberappflutter/tugas/tugas12/GetDetailScreen.dart';
 import 'package:sanberappflutter/tugas/tugas9/telegram.dart';
 
 void main() {
@@ -18,10 +20,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: LoginScreen(),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+          primarySwatch: Colors.blue),
+      home: GetAllData(),
     );
   }
 }
